@@ -1,0 +1,26 @@
+! --- Nintendo KILL SWITCH for MIG Users ---
+! ปิดตายทุกอย่าง ป้องกันการส่ง Certificate ตลับเกมออกไปตรวจสอบ
+
+! 1. บล็อกการตรวจสอบสิทธิ์และบัญชี (สำคัญที่สุด)
+||accounts.nintendo.com^
+||dauth-lp1.ndas.srv.nintendo.net^
+
+! 2. บล็อก eShop และหน้าร้านค้า
+||*.eshop.nintendo.net^
+||*.five.nintendo.net^
+
+! 3. บล็อกการส่งข้อมูลการเล่นและ Error (Telemetry)
+||receive-*.dg.srv.nintendo.net^
+||receive.*.dg.srv.nintendo.net^
+||bug-*.dg.srv.nintendo.net^
+||bug.*.dg.srv.nintendo.net^
+
+! 4. บล็อกบริการออนไลน์และ Multiplayer
+||nintendo.net^
+||nintendo.com^
+||nintendowifi.net^
+
+! 5. (Optional) ปล่อย Connection Test ไว้ เพื่อไม่ให้เครื่องโวยวายว่าไม่มีเน็ต
+! ถ้าอยากปิดให้หมดจริงๆ ให้ลบบรรทัด @@ ออก แต่เครื่องจะขึ้นเตือนบ่อยๆ
+@@||ctest.cdn.nintendo.net^
+@@||conntest.nintendo.com^
