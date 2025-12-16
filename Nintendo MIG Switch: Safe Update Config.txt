@@ -10,6 +10,28 @@
 ||capi.*.nintendo.net^
 ||analytics.nintendo.net^
 
+! --- Block Extra Leaks from Log (16/12/2025) ---
+
+! Block Vermillion (Notification/Presence Gateway)
+||*.vermillion.srv.nintendo.net^
+
+! Block Penne (Service Infrastructure)
+||*.penne.srv.nintendo.net^
+
+! Block Dragons (Social/SNS)
+||*.dragons.nintendo.net^
+
+! Block BCAT topics (In-game events/News)
+||*.bcat.srv.nintendo.net^
+
+! Block Account API (กันเหนียวเพิ่มเติม)
+||api.accounts.nintendo.com^
+
+! (Optional) Block Authentication ระหว่างเล่นเกม
+! ถ้าจะอัปเดตเครื่อง ให้ใส่เครื่องหมายตกใจ (!) หน้าบรรทัดนี้ชั่วคราว
+! แต่ถ้าเล่นเกม แนะนำให้เอาออกเพื่อให้ทำงาน
+||aauth.p01.lp1.ndas.srv.nintendo.net^
+
 ! 2. บล็อก eShop และโฆษณา (ไม่จำเป็นต้องใช้ ลดความเสี่ยง)
 ||*.eshop.nintendo.net^
 ||*.five.nintendo.net^
