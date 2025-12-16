@@ -1,5 +1,14 @@
 ! --- Nintendo MIG Switch: Safe Update Config ---
 
+!  (Whitelist) อนุญาตให้อัปเดต Firmware และตรวจสอบการเชื่อมต่อ
+! เครื่องหมาย @@ คือการยกเว้น (Allow)
+@@||sun.hac.lp1.d4c.nintendo.net^
+@@||atumn.hac.lp1.d4c.nintendo.net^
+@@||*.cdn.nintendo.net^
+@@||ctest.cdn.nintendo.net^
+! Allow License Check for Digital Games / NSO
+@@||tigers.p01.lp1.dragons.nintendo.net^
+
 !  บล็อก "นักสืบ" (Telemetry & Data Collection) **สำคัญที่สุด**
 ! ป้องกันการส่งข้อมูลว่าเราเล่นเกมอะไร นานแค่ไหน หรือ error อะไร
 ||receive-*.dg.srv.nintendo.net^
@@ -37,16 +46,6 @@
 ||*.five.nintendo.net^
 ||beach.*.nintendo.net^
 ||a.app.nintendo.net^
-
-!  (Whitelist) อนุญาตให้อัปเดต Firmware และตรวจสอบการเชื่อมต่อ
-! เครื่องหมาย @@ คือการยกเว้น (Allow)
-@@||sun.hac.lp1.d4c.nintendo.net^
-@@||atumn.hac.lp1.d4c.nintendo.net^
-@@||*.cdn.nintendo.net^
-@@||ctest.cdn.nintendo.net^
-
-! Allow License Check for Digital Games / NSO
-@@||tigers.p01.lp1.dragons.nintendo.net^
 
 
 ! หมายเหตุ: เราจะไม่บล็อก 'dauth' หรือ 'aauth' ในชุดนี้
