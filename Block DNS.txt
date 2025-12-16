@@ -20,9 +20,27 @@
 @@||ctest.cdn.nintendo.net^
 @@||conntest.nintendo.com^
 
-! 5. บล็อกบริการออนไลน์และ Multiplayer
-||nintendo.net^
-||nintendo.com^
-||nintendowifi.net^
+! Block Device Authentication (ตรวจสอบสิทธิ์เครื่องและตลับ)
+! ตัวนี้คือตัวการหลักที่ส่ง Header ตลับเกมไปเช็ค
+||dauth-lp1.ndas.srv.nintendo.net^
+
+! Block Account Authentication (ตรวจสอบบัญชีผู้ใช้)
+! ป้องกันการผูกกิจกรรมการเล่นเข้ากับ Account ของคุณ
+||aauth-lp1.ndas.srv.nintendo.net^
+||accounts.nintendo.com^
+
+! Block Token & Service Login
+||id.nintendo.net^
+
+! Block การส่งข้อมูลกลับ (Log & Usage)
+||receive-*.dg.srv.nintendo.net^
+||receive.*.dg.srv.nintendo.net^
+||bug-*.dg.srv.nintendo.net^
+||bug.*.dg.srv.nintendo.net^
+
+! Block Analytics พื้นฐาน
+||s.nintendo.net^
+||syndication.nintendo.net^
+
 
 
