@@ -1,0 +1,9 @@
+!  (Whitelist) อนุญาตให้อัปเดต Firmware และตรวจสอบการเชื่อมต่อ
+! เครื่องหมาย @@ คือการยกเว้น (Allow)
+@@||sun.hac.lp1.d4c.nintendo.net^
+@@||atumn.hac.lp1.d4c.nintendo.net^
+@@||*.cdn.nintendo.net^
+@@||ctest.cdn.nintendo.net^
+
+! Allow License Check for Digital Games / NSO
+@@||tigers.p01.lp1.dragons.nintendo.net^
