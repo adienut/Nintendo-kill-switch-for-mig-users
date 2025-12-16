@@ -1,0 +1,27 @@
+! --- Nintendo MIG Switch: Safe Update Config ---
+
+! 1. บล็อก "นักสืบ" (Telemetry & Data Collection) **สำคัญที่สุด**
+! ป้องกันการส่งข้อมูลว่าเราเล่นเกมอะไร นานแค่ไหน หรือ error อะไร
+||receive-*.dg.srv.nintendo.net^
+||receive.*.dg.srv.nintendo.net^
+||bug-*.dg.srv.nintendo.net^
+||bug.*.dg.srv.nintendo.net^
+||baas.nintendo.com^
+||capi.*.nintendo.net^
+||analytics.nintendo.net^
+
+! 2. บล็อก eShop และโฆษณา (ไม่จำเป็นต้องใช้ ลดความเสี่ยง)
+||*.eshop.nintendo.net^
+||*.five.nintendo.net^
+||beach.*.nintendo.net^
+||a.app.nintendo.net^
+
+! 3. (Whitelist) อนุญาตให้อัปเดต Firmware และตรวจสอบการเชื่อมต่อ
+! เครื่องหมาย @@ คือการยกเว้น (Allow)
+@@||sun.hac.lp1.d4c.nintendo.net^
+@@||atumn.hac.lp1.d4c.nintendo.net^
+@@||*.cdn.nintendo.net^
+@@||ctest.cdn.nintendo.net^
+
+! หมายเหตุ: เราจะไม่บล็อก 'dauth' หรือ 'aauth' ในชุดนี้
+! เพราะถ้าบล็อก คุณจะอัปเดตเครื่องไม่ได
